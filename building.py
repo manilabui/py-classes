@@ -8,6 +8,9 @@ class Building:
 				self.date_constructed = ''
 				self.owner = ''
 
+		def __str__(self):
+				return f"{self.owner}'s building at {self.address} is {self.stories} stories tall."
+
 		def construct(self):
 				self.date_constructed = datetime.datetime.now()
 
